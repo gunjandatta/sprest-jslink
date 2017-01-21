@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="8c4f5e7a-22f7-4656-ba04-c49259d99db6" 
+        solutionId="8c4f5e7a-22f7-4656-ba04-c49259d99db6" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="GD.SPREST.JSLink"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="07e546c4-b9f8-4552-b879-67e420a84882" />
+  </features>
+</package>

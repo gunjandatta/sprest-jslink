@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="JSLinkExamples"
+     ProductID="{f60ce23b-4ab6-493a-a2a3-0ddd7b24f06f}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <StartPage>~appWebUrl/Lists/Demo?{StandardTokens}</StartPage>
+    <Title>JSLink Examples</Title>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+
+
+</App>
