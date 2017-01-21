@@ -12,6 +12,13 @@
     </ContentTypes>
     <Fields>
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" JSLink="~site/node_modules/gd-sprest/dist/gd-sprest.min.js|~site/scripts/field.js" />
+      <Field ID="" Type="Choice" Name="GroupType" StaticName="GroupType" Title="Group">
+        <CHOICES>
+          <CHOICE>Group 1</CHOICE>
+          <CHOICE>Group 2</CHOICE>
+          <CHOICE>Group 3</CHOICE>
+        </CHOICES>
+      </Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
@@ -38,7 +45,8 @@
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="GroupType" />
         </ViewFields>
         <Query>
           <OrderBy>
@@ -59,8 +67,12 @@
           <FieldRef Name="LinkTitle"></FieldRef>
         </ViewFields>
         <Query>
+          <GroupBy>
+            <FieldRef Name="GroupType" />
+          </GroupBy>
           <OrderBy>
-            <FieldRef Name="ID"></FieldRef>
+            <FieldRef Name="GroupType" />
+            <FieldRef Name="Title" />
           </OrderBy>
         </Query>
         <ParameterBindings>

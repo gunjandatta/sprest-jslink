@@ -5,5 +5,45 @@
                 TemplateType="100"
                 Url="Lists/Demo"
                 Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Test 1</Field>
+          <Field Name="GroupType">Group 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 2</Field>
+          <Field Name="GroupType">Group 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 3</Field>
+          <Field Name="GroupType">Group 1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 4</Field>
+          <Field Name="GroupType">Group 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 5</Field>
+          <Field Name="GroupType">Group 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 6</Field>
+          <Field Name="GroupType">Group 2</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 7</Field>
+          <Field Name="GroupType">Group 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 8</Field>
+          <Field Name="GroupType">Group 3</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Test 9</Field>
+          <Field Name="GroupType">Group 3</Field>
+        </Row>
+      </Rows>
+    </Data>
   </ListInstance>
 </Elements>

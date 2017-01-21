@@ -32,20 +32,22 @@ var GDView = (function () {
     }
 
     // Method to add tags above and below the group
-    function group(ctx) {
+    function group(ctx, group, groupId, listItem, listSchema, level, expand) {
+        var style = " ";
+
+        // Get the default group
+        var html = RenderGroupTemplate(ctx, group, groupId, listItem, listSchema, level, expand);
+
+        // Convert the html to an element
         var group = document.createElement("table");
+        group.innerHTML = html;
 
-        // Render the default html
-        group.innerHTML = RenderGroupTemplate(ctx);
-
-        // Get the row
+        // Append rows above and below the group
         var row = group.querySelector("tr");
-
-        // Add the tags
         row.innerHTML =
-            "<td><span style='background-color:purple; color:white;'>Before Group</span></td>" +
+            "<td><span style='background-color: purple; color: white'>Before Group</span></td>" +
             row.innerHTML +
-            "<td><span style='background-color:purple; color:white;'>After Group</span></td>";
+            "<td><span style='background-color: purple; color: white'>After Group</span></td>";
 
         // Return the html
         return group.innerHTML;
@@ -89,7 +91,8 @@ var GDView = (function () {
             Item: item
         };
 
-        // Apply the customization
+        // Register the template
+        jsLink.register();
         SPClientTemplates.TemplateManager.RegisterTemplateOverrides(jsLink.getTemplate());
     }
 
