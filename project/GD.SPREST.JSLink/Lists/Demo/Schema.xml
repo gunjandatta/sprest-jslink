@@ -13,7 +13,7 @@
     </ContentTypes>
     <Fields>
       <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
-      <Field ID="{99bff9c3-9d84-4870-adcf-601720461f6d}" Type="Choice" Name="GroupType" StaticName="GroupType" DisplayName="Group">
+      <Field ID="{99bff9c3-9d84-4870-adcf-601720461f6d}" Type="Choice" Name="GroupType" StaticName="GroupType" DisplayName="Group" JSLink="~site/node_modules/gd-sprest/dist/gd-sprest.min.js|~site/Scripts/field.js">
         <CHOICES>
           <CHOICE>Group 1</CHOICE>
           <CHOICE>Group 2</CHOICE>

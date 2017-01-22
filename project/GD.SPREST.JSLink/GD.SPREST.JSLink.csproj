@@ -71,6 +71,7 @@
     </None>
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\field.js" />
     <Content Include="Scripts\form.js" />
     <Content Include="Scripts\view.js" />
     <Content Include="Scripts\_references.js" />

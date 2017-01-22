@@ -14,7 +14,7 @@ var GDForm = (function () {
         ctx.CurrentFieldValue = "Gunjan";
 
         // Render the field
-        return $REST.JSLink.renderField(ctx, field);
+        return $REST.Helper.JSLink.renderField(ctx, field);
     }
 
     /**
@@ -22,6 +22,8 @@ var GDForm = (function () {
      */
     function init() {
         var jsLink = new $REST.JSLink();
+
+        // Set the template
         jsLink.Templates = {
             Fields: [
                 {
