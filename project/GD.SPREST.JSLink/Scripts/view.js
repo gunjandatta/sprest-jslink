@@ -93,7 +93,6 @@ var GDView = (function () {
 
         // Register the template
         jsLink.register();
-        SPClientTemplates.TemplateManager.RegisterTemplateOverrides(jsLink.getTemplate());
     }
 
     /**

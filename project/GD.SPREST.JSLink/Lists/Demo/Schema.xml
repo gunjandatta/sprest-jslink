@@ -2,17 +2,18 @@
 <List xmlns:ows="Microsoft SharePoint" Title="Demo" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Demo" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x01CC4335B8F351436FA8D01DCC020F4AF7" JSLink="~site/node_modules/gd-sprest/dist/gd-sprest.min.js|~site/Scripts/contentType.js">
+      <ContentType ID="0x01CC4335B8F351436FA8D01DCC020F4AF7" JSLink="~site/node_modules/gd-sprest/dist/gd-sprest.min.js|~site/Scripts/form.js">
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{99bff9c3-9d84-4870-adcf-601720461f6d}" Name="GroupType" />
         </FieldRefs>
         <Folder TargetName="Item" />
       </ContentType>
       <ContentTypeRef ID="0x0120" />
     </ContentTypes>
     <Fields>
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" JSLink="~site/node_modules/gd-sprest/dist/gd-sprest.min.js|~site/scripts/field.js" />
-      <Field ID="" Type="Choice" Name="GroupType" StaticName="GroupType" Title="Group">
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{99bff9c3-9d84-4870-adcf-601720461f6d}" Type="Choice" Name="GroupType" StaticName="GroupType" DisplayName="Group">
         <CHOICES>
           <CHOICE>Group 1</CHOICE>
           <CHOICE>Group 2</CHOICE>

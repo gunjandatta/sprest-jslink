@@ -3,8 +3,7 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
     <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="contentType.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="view.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="field.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="form.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
