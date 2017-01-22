@@ -28,7 +28,6 @@ var GDForm = (function () {
             Fields: [
                 {
                     Name: "Title",
-                    EditForm: setDefaultValue,
                     NewForm: setDefaultValue
                 }
             ]
