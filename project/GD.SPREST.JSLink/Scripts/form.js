@@ -21,20 +21,17 @@ var GDForm = (function () {
      * Initialization
      */
     function init() {
-        var jsLink = new $REST.JSLink();
+        // Register the JSLink template
+        $REST.Helper.JSLink.register({
+            Templates: {
+                Fields: {
+                    Title: {
+                        NewForm: setDefaultValue
 
-        // Set the template
-        jsLink.Templates = {
-            Fields: [
-                {
-                    Name: "Title",
-                    NewForm: setDefaultValue
+                    }
                 }
-            ]
-        };
-
-        // Register the template
-        jsLink.register();
+            }
+        });
     }
 
     /**

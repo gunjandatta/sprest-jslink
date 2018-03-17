@@ -2,7 +2,6 @@
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
     <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
-    <ProjectItemFile Source="package.json" Type="ElementFile" />
-    <ProjectItemFile Source="node_modules\gd-sprest\dist\gd-sprest.min.js" Target="node_modules\gd-sprest\dist\" Type="ElementFile" />
+    <ProjectItemFile Source="bundleconfig.json" Type="ElementFile" />
   </Files>
 </ProjectItem>

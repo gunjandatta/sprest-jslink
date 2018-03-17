@@ -5,5 +5,11 @@
     <File Path="Scripts\view.js" Url="Scripts/view.js" ReplaceContent="TRUE" />
     <File Path="Scripts\form.js" Url="Scripts/form.js" ReplaceContent="TRUE" />
     <File Path="Scripts\field.js" Url="Scripts/field.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gd-sprest.min.js" Url="Scripts/gd-sprest.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gd-sprest.js" Url="Scripts/gd-sprest.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\gd-sprest.d.ts" Url="Scripts/gd-sprest.d.ts" ReplaceContent="TRUE" />
+    <File Path="Scripts\view.min.js" Url="Scripts/view.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\form.min.js" Url="Scripts/form.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\field.min.js" Url="Scripts/field.min.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

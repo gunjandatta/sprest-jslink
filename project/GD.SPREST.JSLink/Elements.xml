@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="RootModule">
-    <File Path="package.json" Url="package.json" ReplaceContent="TRUE" />
-    <File Path="node_modules\gd-sprest\dist\gd-sprest.min.js" Url="node_modules/gd-sprest/dist/gd-sprest.min.js" ReplaceContent="TRUE" />
+    <File Path="bundleconfig.json" Url="bundleconfig.json" ReplaceContent="TRUE" />
   </Module>
 </Elements>

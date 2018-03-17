@@ -81,18 +81,15 @@ var GDView = (function () {
      * Initialization
      */
     function init() {
-        var jsLink = new $REST.JSLink();
-        jsLink.Templates = {
+        // Register the JSLink templates
+        $REST.Helper.JSLink.register({
             BaseViewId: 2,
             Body: body,
             Footer: footer,
             Group: group,
             Header: header,
             Item: item
-        };
-
-        // Register the template
-        jsLink.register();
+        });
     }
 
     /**

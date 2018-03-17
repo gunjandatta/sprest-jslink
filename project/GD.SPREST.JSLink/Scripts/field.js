@@ -12,21 +12,17 @@ var GDField = (function () {
      * Initialization
      */
     function init() {
-        var jsLink = new $REST.JSLink();
-
-        // Set the template
-        jsLink.Templates = {
-            Fields: [
-                {
-                    Name: "GroupType",
-                    EditForm: (ctx, field) => { $REST.Helper.JSLink.hideField(ctx, field, true); },
-                    View: $REST.Helper.JSLink.disableQuickEdit
+        // Register the JSLink Template
+        $REST.Helper.JSLink.register({
+            Templates: {
+                Fields: {
+                    GroupType: {
+                        EditForm: (ctx, field) => { $REST.Helper.JSLink.hideField(ctx, field, true); },
+                        View: $REST.Helper.JSLink.disableQuickEdit
+                    }
                 }
-            ]
-        };
-
-        // Register the template
-        jsLink.register();
+            }
+        });
     }
 
     /**

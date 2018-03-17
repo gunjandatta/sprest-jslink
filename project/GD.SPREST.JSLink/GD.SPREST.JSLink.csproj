@@ -43,13 +43,14 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="Lists\Demo\DemoInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{75ab1f02-d163-4930-a093-04c7b3136df8}</SharePointProjectItemId>
     </None>
     <None Include="Lists\Demo\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4bd537fc-c447-4587-8600-39e12dd57c99}</SharePointProjectItemId>
     </None>
-    <None Include="package.json" />
+    <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f60ce23b-4ab6-493a-a2a3-0ddd7b24f06f}</SharePointProjectItemId>
     </None>
@@ -57,8 +58,6 @@
     <Content Include="Lists\Demo\DemoInstance\Elements.xml" />
     <Content Include="Lists\Demo\Elements.xml" />
     <Content Include="Lists\Demo\Schema.xml" />
-    <Content Include="node_modules\gd-sprest\dist\gd-sprest.js" />
-    <Content Include="node_modules\gd-sprest\dist\gd-sprest.min.js" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
     <None Include="SharePointProjectItem.spdata">
@@ -72,8 +71,19 @@
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\field.js" />
+    <Content Include="Scripts\field.min.js">
+      <DependentUpon>field.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\form.js" />
+    <Content Include="Scripts\form.min.js">
+      <DependentUpon>form.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\gd-sprest.js" />
+    <Content Include="Scripts\gd-sprest.min.js" />
     <Content Include="Scripts\view.js" />
+    <Content Include="Scripts\view.min.js">
+      <DependentUpon>view.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +122,7 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="node_modules\gd-sprest\dist\gd-sprest.d.ts" />
+    <TypeScriptCompile Include="Scripts\gd-sprest.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

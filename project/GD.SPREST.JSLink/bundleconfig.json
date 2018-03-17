@@ -1,0 +1,20 @@
+[
+  {
+    "outputFileName": "Scripts/view.min.js",
+    "inputFiles": [
+      "Scripts/view.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/form.min.js",
+    "inputFiles": [
+      "Scripts/form.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/field.min.js",
+    "inputFiles": [
+      "Scripts/field.js"
+    ]
+  }
+]
