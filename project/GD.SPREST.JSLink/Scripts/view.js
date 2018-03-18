@@ -84,11 +84,13 @@ var GDView = (function () {
         // Register the JSLink templates
         $REST.Helper.JSLink.register({
             BaseViewId: 2,
-            Body: body,
-            Footer: footer,
-            Group: group,
-            Header: header,
-            Item: item
+            Templates: {
+                Body: body,
+                Footer: footer,
+                Group: group,
+                Header: header,
+                Item: item
+            }
         });
     }
 
